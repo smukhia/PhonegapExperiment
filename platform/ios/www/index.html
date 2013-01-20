@@ -22,15 +22,28 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+     
+       
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.js"></script>
+         <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.css"/>
+      
+        <script>
+            //onDeviceReady is called when PhoneGap is initialized
+            function onDeviceReady() { $(document).ready(function() {
+                                                         //Call any jQuery functions here });
+                                                         }
+            document.addEventListener(“deviceready”, onDeviceReady);
+            </script>
+        
+        <title>NepaliEvent</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div data-role ="page">
+            <div data-role="header">
+            <h1>Local Search</h1>
+            <div>
+            <div data-role="content">
                 
             </div>
         </div>
